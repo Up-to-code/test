@@ -1,27 +1,30 @@
 <div class="relative">
-    <salla-slider type="banner" class="overflow-hidden">
-        {% for baner in component.baner %}
-        <div 
-            class="min-h-[200px] sm:min-h-[300px] md:min-h-[400px] lg:min-h-[500px] bg-cover bg-center flex items-center justify-center transition-transform duration-300 ease-in-out"
-            style="background-image: url('{{ baner.image}}');"
-            aria-label="Banner {{ forloop.counter }}"
+  <salla-slider
+    pagination
+    type="fullwidth"
+    class="overflow-hidden snap-x snap-mandatory scroll-smooth"
+    
+    show-controls="false" 
+    auto-play
+  >
+    <div slot="items">
+      {% for baner in component.baner %}
+      <div
+        class="min-h-[200px] sm:min-h-[300px] md:min-h-[400px] lg:min-h-[500px] bg-cover bg-center flex items-center justify-center transition-transform duration-300 ease-in-out snap-center swiper-slide swiper-wrapper"
+        style="background-image: url('{{ baner.baner_image}}');"
+        aria-label="Banner {{ forloop.counter }}"
+      >
+        <!-- Overlay Content -->
+        <div
+          class="bg-black bg-opacity-50 text-white p-6 rounded-lg text-center max-w-xs md:max-w-md"
         >
-            <!-- Optional: Add overlay for text or buttons -->
-            <div class="bg-black bg-opacity-50 text-white p-4 rounded-lg">
-                <h2 class="text-xl font-semibold">{{ baner.title }}</h2>
-                <p class="text-sm">{{ baner.description }}</p>
-                <!-- Add call-to-action button if needed -->
-                <a href="{{ baner.link }}" class="mt-2 inline-block bg-white text-black px-4 py-2 rounded-lg hover:bg-gray-300 transition-colors">Learn More</a>
-            </div>
+          <h2 class="text-xl sm:text-2xl md:text-3xl font-semibold">
+            {{ baner.baner_title }}
+          </h2>
+          <p class="text-sm sm:text-base md:text-lg">{{ baner.baner_des }}</p>
         </div>
-        {% endfor %}
-    </salla-slider>
-
-    <!-- Optional: Navigation arrows for slider -->
-    <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70 transition-opacity">
-        <i class="sicon-chevron-left"></i>
-    </button>
-    <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70 transition-opacity">
-        <i class="sicon-chevron-right"></i>
-    </button>
+      </div>
+      {% endfor %}
+    </div>
+  </salla-slider>
 </div>
