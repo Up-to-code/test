@@ -830,6 +830,13 @@
                     "public": true
                 }
             ]
+        },
+        {
+            "key": "9415832a-f109-4f63-a15c-d6197a6a1304",
+            "title": "baner",
+            "icon": "sicon-store",
+            "path": "header.baner",
+            "fields": []
         }
     ],
     "support_url": "https://example.com",
