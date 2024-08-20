@@ -812,7 +812,24 @@
             "title": "menu",
             "icon": "sicon-store",
             "path": "header.menu",
-            "fields": []
+            "fields": [
+                {
+                    "id": "links",
+                    "type": "number",
+                    "format": "units",
+                    "label": "links",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "Insert value",
+                    "icon": "sicon-percentage",
+                    "value": null,
+                    "required": false,
+                    "unit": "%",
+                    "minimum": 0,
+                    "maximum": 100,
+                    "public": true
+                }
+            ]
         }
     ],
     "support_url": "https://example.com",
