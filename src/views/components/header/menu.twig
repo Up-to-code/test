@@ -1,0 +1,11 @@
+<div class="menu bg-zinc-900 py-7">
+  <ul>
+    {% for item in items %}
+    <li>
+      <a href="{{item.url}}">
+        <img src="{{ item.image.url }}" alt="{{ item.image.alt }}" />
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
