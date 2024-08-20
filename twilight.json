@@ -808,30 +808,6 @@
             ]
         },
         {
-            "key": "640bec96-25d8-40b8-b57a-05f42c4c6408",
-            "title": "menu",
-            "icon": "sicon-store",
-            "path": "header.menu",
-            "fields": [
-                {
-                    "id": "links",
-                    "type": "number",
-                    "format": "units",
-                    "label": "links",
-                    "description": null,
-                    "labelHTML": null,
-                    "placeholder": "Insert value",
-                    "icon": "sicon-percentage",
-                    "value": null,
-                    "required": false,
-                    "unit": "%",
-                    "minimum": 0,
-                    "maximum": 100,
-                    "public": true
-                }
-            ]
-        },
-        {
             "key": "9415832a-f109-4f63-a15c-d6197a6a1304",
             "title": "baner",
             "icon": "sicon-store",
