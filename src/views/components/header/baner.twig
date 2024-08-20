@@ -1,10 +1,27 @@
-<div>
-    <salla-slider type="banner">
-        {% for banner in component.baner %}
-        <div class="min-h-[100px] bg-cover bg-center" style="background-image: url('{{ banner.image}}');">
-
+<div class="relative">
+    <salla-slider type="banner" class="overflow-hidden">
+        {% for baner in component.baner %}
+        <div 
+            class="min-h-[200px] sm:min-h-[300px] md:min-h-[400px] lg:min-h-[500px] bg-cover bg-center flex items-center justify-center transition-transform duration-300 ease-in-out"
+            style="background-image: url('{{ baner.image}}');"
+            aria-label="Banner {{ forloop.counter }}"
+        >
+            <!-- Optional: Add overlay for text or buttons -->
+            <div class="bg-black bg-opacity-50 text-white p-4 rounded-lg">
+                <h2 class="text-xl font-semibold">{{ baner.title }}</h2>
+                <p class="text-sm">{{ baner.description }}</p>
+                <!-- Add call-to-action button if needed -->
+                <a href="{{ baner.link }}" class="mt-2 inline-block bg-white text-black px-4 py-2 rounded-lg hover:bg-gray-300 transition-colors">Learn More</a>
+            </div>
         </div>
-
         {% endfor %}
     </salla-slider>
+
+    <!-- Optional: Navigation arrows for slider -->
+    <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70 transition-opacity">
+        <i class="sicon-chevron-left"></i>
+    </button>
+    <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70 transition-opacity">
+        <i class="sicon-chevron-right"></i>
+    </button>
 </div>
