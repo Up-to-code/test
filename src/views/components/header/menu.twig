@@ -1,11 +1,8 @@
-<div class="menu bg-zinc-900 py-7">
-  <ul>
-    {% for item in items %}
-    <li>
-      <a href="{{item.url}}">
-        <img src="{{ item.image.url }}" alt="{{ item.image.alt }}" />
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
+{% for breadcrumb in breadcrumbs %}
+    {% if not loop.last %}
+        <li><a href="{{ breadcrumb.url }}" class="...">{{ breadcrumb.title }}</a></li>
+        <li><i class="..."></i></li>
+    {% else %}
+        <li><span class="...">{{ breadcrumb.title|raw }}</span></li>
+    {% endif %}
+{% endfor %}
