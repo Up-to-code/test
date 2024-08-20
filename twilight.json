@@ -878,7 +878,64 @@
             "title": "futioers",
             "icon": "sicon-store",
             "path": "home.futioers",
-            "fields": []
+            "fields": [
+                {
+                    "id": "fut",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "Collection",
+                    "description": null,
+                    "labelHTML": null,
+                    "item_label": null,
+                    "icon": "sicon-list-add",
+                    "fields": [
+                        {
+                            "id": "fut.title",
+                            "type": "string",
+                            "format": "text",
+                            "label": "title",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": 30
+                        },
+                        {
+                            "id": "fut.sub_title",
+                            "type": "string",
+                            "format": "text",
+                            "label": "sub_title",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": 30
+                        },
+                        {
+                            "id": "fut.icon",
+                            "type": "string",
+                            "format": "icon",
+                            "label": "Icon Picker",
+                            "description": null,
+                            "labelHTML": null,
+                            "icon": "sicon-user-circle",
+                            "value": "sicon-store",
+                            "required": false
+                        }
+                    ],
+                    "value": [],
+                    "minLength": "3",
+                    "maxLength": "3"
+                }
+            ]
         }
     ],
     "support_url": "https://example.com",
