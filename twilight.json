@@ -808,30 +808,6 @@
             ]
         },
         {
-            "key": "640bec96-25d8-40b8-b57a-05f42c4c6408",
-            "title": "menu",
-            "icon": "sicon-store",
-            "path": "header.menu",
-            "fields": [
-                {
-                    "id": "links",
-                    "type": "number",
-                    "format": "units",
-                    "label": "links",
-                    "description": null,
-                    "labelHTML": null,
-                    "placeholder": "Insert value",
-                    "icon": "sicon-percentage",
-                    "value": null,
-                    "required": false,
-                    "unit": "%",
-                    "minimum": 0,
-                    "maximum": 100,
-                    "public": true
-                }
-            ]
-        },
-        {
             "key": "9415832a-f109-4f63-a15c-d6197a6a1304",
             "title": "baner",
             "icon": "sicon-store",
@@ -894,6 +870,70 @@
                     "value": [],
                     "minLength": 1,
                     "maxLength": 5
+                }
+            ]
+        },
+        {
+            "key": "99435019-413b-47a6-9395-2772cfa1131f",
+            "title": "futioers",
+            "icon": "sicon-store",
+            "path": "home.futioers",
+            "fields": [
+                {
+                    "id": "fut",
+                    "type": "collection",
+                    "format": "collection",
+                    "label": "Collection",
+                    "description": null,
+                    "labelHTML": null,
+                    "item_label": null,
+                    "icon": "sicon-list-add",
+                    "fields": [
+                        {
+                            "id": "fut.title",
+                            "type": "string",
+                            "format": "text",
+                            "label": "title",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": true,
+                            "minLength": 6,
+                            "maxLength": 30
+                        },
+                        {
+                            "id": "fut.sub_title",
+                            "type": "string",
+                            "format": "text",
+                            "label": "sub_title",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": 30
+                        },
+                        {
+                            "id": "fut.icon",
+                            "type": "string",
+                            "format": "icon",
+                            "label": "Icon Picker",
+                            "description": null,
+                            "labelHTML": null,
+                            "icon": "sicon-user-circle",
+                            "value": "sicon-store",
+                            "required": true
+                        }
+                    ],
+                    "value": [],
+                    "minLength": "3",
+                    "maxLength": "3"
                 }
             ]
         }
