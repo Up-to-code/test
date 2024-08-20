@@ -1,8 +1,0 @@
-{% for breadcrumb in breadcrumbs %}
-    {% if not loop.last %}
-        <li><a href="{{ breadcrumb.url }}" class="...">{{ breadcrumb.title }}</a></li>
-        <li><i class="..."></i></li>
-    {% else %}
-        <li><span class="...">{{ breadcrumb.title|raw }}</span></li>
-    {% endif %}
-{% endfor %}
