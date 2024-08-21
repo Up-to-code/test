@@ -954,6 +954,21 @@
                     "icon": "sicon-list-add",
                     "fields": [
                         {
+                            "id": "news_navbare.color",
+                            "type": "string",
+                            "format": "text",
+                            "label": "color",
+                            "description": null,
+                            "labelHTML": null,
+                            "placeholder": "Placeholder text ..",
+                            "icon": "sicon-format-text-alt",
+                            "value": null,
+                            "multilanguage": false,
+                            "required": false,
+                            "minLength": 6,
+                            "maxLength": 30
+                        },
+                        {
                             "id": "news_navbare.title",
                             "type": "string",
                             "format": "text",
