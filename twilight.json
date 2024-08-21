@@ -954,7 +954,7 @@
                     "icon": "sicon-list-add",
                     "fields": [
                         {
-                            "id": "news_navbare.string",
+                            "id": "news_navbare.title",
                             "type": "string",
                             "format": "text",
                             "label": "title",
