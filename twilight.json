@@ -936,6 +936,13 @@
                     "maxLength": "3"
                 }
             ]
+        },
+        {
+            "key": "25477b91-59e7-4a97-911a-3d6e86b5aa46",
+            "title": "newsBare",
+            "icon": "sicon-hr",
+            "path": "header.news_bare",
+            "fields": []
         }
     ],
     "support_url": "https://example.com",
