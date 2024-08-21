@@ -1,3 +1,20 @@
-<div>
-    tttttttttt
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
+    {% for futioer in component.fut %}
+    <div class="flex flex-col items-center text-center p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <!-- Icon Section -->
+        <div class="text-4xl text-indigo-600 mb-4">
+            <i class="futioer-icon {{ futioer.icon }}"></i>
+        </div>
+        
+        <!-- Title Section -->
+        <div class="text-lg font-semibold text-zinc-800 mb-2">
+            {{ futioer.title }}
+        </div>
+        
+        <!-- Subtitle Section -->
+        <div class="text-sm text-zinc-600">
+            {{ futioer.sub_title }}
+        </div>
+    </div>
+    {% endfor %}
 </div>
